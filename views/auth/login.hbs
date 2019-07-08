@@ -1,16 +1,13 @@
 <div class="login-container">
     <div class="login-form">
-        <div class="color-overlay"></div>
+        <div class="imgprofile">
+            <img src="https://www.library.caltech.edu/sites/default/files/styles/headshot/public/default_images/user.png?itok=1HlTtL2d"
+                id="icon" alt="userimage">
+        </div>
         <form action="/auth/login" method="POST">
-            <label for="username">username</label>
-            <br>
-            <input type="text" name="username">
-            <br>
-            <label for="password">password</label>
-            <br>
-            <input type="password" name="password">
-            <br>
-            <button type="submit">Login</button>
+            <input type="text" id="login" class="firstbox" name="login" placeholder="User Name">
+            <input type="password" id="password" class="secondbox" name="login" placeholder="Password">
+            <input type="submit" class="button" value="Log In">
         </form>
     </div>
 </div>
