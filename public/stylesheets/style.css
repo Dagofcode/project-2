@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+.index-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid black; }
+
+.index-header {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  background: #fff;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 3px; }
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.nav-bar {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1; }
+
+.index-btns {
+  margin-top: 10px; }
+
+.btn {
+  padding: 3px 5px;
+  background-color: black;
+  border-radius: 5px; }
+
+.index-header a {
+  text-decoration: none; }
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6a6f8c;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.login-form {
+  position: relative;
+  width: 30vw;
+  height: 70vh;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(9, 10, 95, 0.7); }
+
+.login-form label {
+  color: white; }
+
+.login-form input {
+  padding: 3px 5px 3px 0px;
+  border-radius: 10px;
+  border-width: 1px;
+  opacity: 0.7; }
+
+.login-form button {
+  border-radius: 10px;
+  text-align: center;
+  padding-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
