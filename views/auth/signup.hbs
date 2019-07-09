@@ -1,9 +1,15 @@
-<div class="main">
-    <div class="boxform">
-        <div class="cardform">
-            <div class="cardbody">
-
-            </div>
-        </div>
+<div class="login-container">
+    <div class="login-form">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p> <br><br>
+        <form action="/auth/signup" method="POST">
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="submit" class="button" value="Sign Up">
+            {{#if err}}
+            <p>{{err.message}}</p>
+            {{/if}}
+        </form>
     </div>
 </div>

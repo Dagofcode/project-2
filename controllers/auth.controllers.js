@@ -1,22 +1,29 @@
-const User = require("../models/Users");
+const User = require("../models/User");
+const passport = require("passport");
 
-exports.getSignup = (req, res, next) => {
-  res.render("auth/signup");
+exports.getSignup = (req, res, next) => res.render("auth/signup");
+
+exports.postSignup = (req, res, next) => {
+  User.register({ ...req.body }, req.body.password)
+    .then(() => {
+      res.redirect("/auth/login");
+    })
+    .catch(err => {
+      res.render("auth/signup", { err });
+    });
 };
 
-exports.postSignup = async (req, res) => {
-  const { username, password } = req.body;
-  await User.register(new User({ username }), password);
-  res.redirect("/auth/login");
-};
-exports.getLogin = (req, res, next) => {
-  res.render("auth/login");
-};
+exports.getLogin = (req, res, next) => res.render("auth/login");
 
-exports.postLogin = (req, res) => {
-  res.redirect("/profile");
-};
-exports.logout = (req, res) => {
-  req.logout();
-  res.redirect("/");
+exports.postLogin = passport.authenticate("local", {
+  failureRedirect: "/auth/login",
+  successRedirect: "/auth/profile"
+});
+
+exports.getProfile = (req, res, next) =>
+  res.render("auth/profile", { user: req.user });
+
+exports.logout = (req, res, next) => {
+  req.logOut();
+  res.redirect("/login");
 };

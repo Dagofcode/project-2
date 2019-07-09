@@ -10,6 +10,7 @@ const logger = require("morgan");
 const path = require("path");
 const passport = require("./middlewares/passport");
 const session = require("express-session");
+const { checkLoggedUser } = require("./middlewares/auth");
 
 mongoose
   .connect("mongodb://localhost/project-2", { useNewUrlParser: true })
@@ -37,8 +38,8 @@ app.use(cookieParser());
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
-    saveUninitialized: true,
-    resave: true,
+    saveUninitialized: false,
+    resave: false,
     cookie: { maxAge: 1000 * 60 }
   })
 );
@@ -62,11 +63,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 
 // default value for title local
-app.locals.title = "Express - Generated with IronGenerator";
+app.locals.title = "Project Module 2";
 
 const index = require("./routes/index");
 const auth = require("./routes/authRoutes");
-app.use("/", index);
-app.use("/auth", auth);
+app.use("/", checkLoggedUser, index);
+app.use("/auth", checkLoggedUser, auth);
 
 module.exports = app;
