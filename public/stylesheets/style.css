@@ -257,6 +257,51 @@ i {
 input:focus {
   outline: none; }
 
+/* The sidebar menu */
+.sidenav {
+  height: 100vh;
+  width: 11vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fe5f55;
+  overflow-x: hidden;
+  padding-top: 20px; }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Style page content */
+.view-all {
+  margin-left: 11vw;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start; }
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border: 1px solid white; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
 @media only screen and (max-width: 600px) {
   .header-container {
     width: 100%;
