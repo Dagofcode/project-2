@@ -63,22 +63,18 @@ a {
   background-color: white;
   color: #fe5f55;
 }
+
 .index-header {
   width: 100vw;
-<<<<<<< HEAD
   height: 90vh;
-=======
   height: 100vh;
-  background-color: #b8d8d8;
   opacity: 0.8;
->>>>>>> d394593d2b1f732407ac3ef2c49733e742a48330
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
 }
-<<<<<<< HEAD
 .header-container {
   width: 90vw;
   height: 100%;
@@ -123,7 +119,7 @@ hr {
 .about-box {
   width: 150px;
   text-align: center;
-=======
+}
 .login-form {
   border-radius: 10px 10px 10px 10px;
   background: #eef5db;
@@ -197,7 +193,6 @@ div {
   height: 200px;
   border-radius: 10px;
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
->>>>>>> d394593d2b1f732407ac3ef2c49733e742a48330
 }
 .about-box p {
   margin-top: 40px;
@@ -209,6 +204,14 @@ div {
 }
 i {
   color: #fe5f55;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7a9e9f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -231,36 +234,3 @@ i {
     background-color: #fe5f55;
   }
 }
-// .login-container {
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: #6a6f8c;
-//   opacity: 0.8;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .login-form {
-//   position: relative;
-//   width: 30vw;
-//   height: 70vh;
-//   opacity: 0.8;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: auto;
-// }
-// .login-form label {
-//   color: white;
-// }
-// .login-form input {
-//   padding: 3px 5px 3px 0px;
-//   border-radius: 10px;
-//   border-width: 1px;
-//   opacity: 0.7;
-// }
-// .login-form button {
-//   border-radius: 10px;
-//   text-align: center;
-//   padding-right: 10px;
-// }
