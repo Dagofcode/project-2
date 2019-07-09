@@ -17,11 +17,11 @@ exports.getLogin = (req, res, next) => res.render("auth/login");
 
 exports.postLogin = passport.authenticate("local", {
   failureRedirect: "/auth/login",
-  successRedirect: "/auth/profile"
+  successRedirect: "/profile"
 });
 
 exports.getProfile = (req, res, next) =>
-  res.render("auth/profile", { user: req.user });
+  res.render("profile", { user: req.user });
 
 exports.logout = (req, res, next) => {
   req.logOut();
