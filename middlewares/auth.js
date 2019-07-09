@@ -6,4 +6,4 @@ exports.checkLoggedUser = (req, res, next) => {
 };
 
 exports.isLoggedIn = (req, res, next) =>
-  req.isAuthenticated() ? next() : res.redirect("/login");
+  req.isAuthenticated() ? next() : res.send("/auth/login");
