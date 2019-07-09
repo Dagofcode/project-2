@@ -1,13 +1,17 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
-  font: 14px "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #eef5db; }
+  font: 14px "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #eef5db;
+}
 
 a {
-  color: #00b7ff; }
+  color: #00b7ff;
+}
 
 .index-container {
   width: 100vw;
@@ -16,18 +20,21 @@ a {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .background-img {
   background: #525161;
   opacity: 0.9;
   overflow: hidden;
   height: 100%;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .index-container a {
   border-radius: 10px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .nav-bar {
   height: 15vh;
@@ -36,29 +43,35 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .nav-title {
-  margin-left: 50px; }
+  margin-left: 50px;
+}
 
 .nav-items {
-  margin-right: 50px; }
+  margin-right: 50px;
+}
 
 .nav-items a {
   text-decoration: none;
   margin: 0 5px;
-  color: white; }
+  color: white;
+}
 
 .login-ref {
   border: 1px solid #eef5db;
   color: white;
   transition: 0.7s;
   font-size: 1.5rem;
-  padding: 5px 30px; }
+  padding: 5px 30px;
+}
 
 .login-ref:hover {
   background-color: white;
-  color: #fe5f55; }
+  color: #fe5f55;
+}
 
 .index-header {
   width: 100vw;
@@ -69,7 +82,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: white;
+}
 
 .header-container {
   width: 90vw;
@@ -79,31 +93,37 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .index-btns {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 hr {
   align-content: center;
   opacity: 0.4;
-  margin: 0 40px; }
+  margin: 0 40px;
+}
 
 .index-btns a {
   color: #fe5f55;
   border: 0.9px solid #fe5f55;
   font-size: 16.8px;
   padding: 10px 50px;
-  transition: 0.6s; }
+  transition: 0.6s;
+}
 
 .search-ref:hover,
 .signup-ref:hover {
   background-color: #fe5f55;
   color: white;
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
 #red-appname {
-  color: #fe5f55; }
+  color: #fe5f55;
+}
 
 .about {
   width: 100vw;
@@ -112,11 +132,13 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .about-box {
   width: 20vw;
-  text-align: center; }
+  text-align: center;
+}
 
 .login-form {
   border-radius: 10px 10px 10px 10px;
@@ -124,21 +146,25 @@ hr {
   width: 90%;
   max-width: 450px;
   position: relative;
-  padding: 0px;
+  padding-top: 30px;
   box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 #icon {
-  width: 60%; }
+  width: 60%;
+}
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+}
 
 form {
   display: block;
-  margin-top: 0em; }
+  margin-top: 0em;
+}
 
 input[type="text"],
 input[type="password"] {
@@ -152,7 +178,8 @@ input[type="password"] {
   margin: 5px;
   width: 70%;
   border: 2px solid #f6f6f6;
-  border-radius: 5px 5px 5px 5px; }
+  border-radius: 5px 5px 5px 5px;
+}
 
 input[type="submit"] {
   background-color: #fe5f55;
@@ -165,17 +192,20 @@ input[type="submit"] {
   font-size: 13px;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
-  transition: all 0.3 ease-in-out; }
+  transition: all 0.3 ease-in-out;
+}
 
 .main {
   padding-bottom: 100px;
   padding-top: 130px;
   background: linear-gradient(to top right, #4f6367 0%, #b8d8d8 100%);
   min-height: 100vh;
-  font-family: "Poppins", "Arial", "Helvetica Neue", "sans-serif"; }
+  font-family: "Poppins", "Arial", "Helvetica Neue", "sans-serif";
+}
 
 .about-box p {
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .contact {
   width: 100vw;
@@ -183,10 +213,12 @@ input[type="submit"] {
   background-color: #fe5f55;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 i {
-  color: #fe5f55; }
+  color: #fe5f55;
+}
 
 .contact-form {
   width: 80vw;
@@ -195,7 +227,8 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  color: white; }
+  color: white;
+}
 
 .contact-form input {
   width: 30vw;
@@ -205,33 +238,40 @@ i {
   color: white;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 .form-row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 #contact-message {
   width: 70vw;
-  height: 20vh; }
+  height: 20vh;
+}
 
 .form-row {
-  display: flex; }
+  display: flex;
+}
 
 .form-button {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .form-button button {
   background-color: #fe5f55;
   color: white;
   border: 2px solid white;
   padding: 15px 60px;
-  border-radius: 30px; }
+  border-radius: 30px;
+}
 
 input:focus {
-  outline: none; }
+  outline: none;
+}
 
 /* The sidebar menu */
 .sidenav {
@@ -243,7 +283,8 @@ input:focus {
   left: 0;
   background-color: #fe5f55;
   overflow-x: hidden;
-  padding-top: 20px; }
+  padding-top: 20px;
+}
 
 /* The navigation menu links */
 .sidenav a {
@@ -251,11 +292,13 @@ input:focus {
   text-decoration: none;
   font-size: 25px;
   color: white;
-  display: block; }
+  display: block;
+}
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: #f1f1f1;
+}
 
 /* Style page content */
 .view-all {
@@ -263,27 +306,33 @@ input:focus {
   padding: 0px 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start; }
+  justify-content: start;
+}
 
 .box {
   width: 300px;
   height: 300px;
   background-color: black;
-  border: 1px solid white; }
+  border: 1px solid white;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px; }
+    padding-top: 15px;
+  }
   .sidenav a {
-    font-size: 18px; } }
+    font-size: 18px;
+  }
+}
 
 .login-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7a9e9f; }
+  background: #7a9e9f;
+}
 
 @media only screen and (max-width: 600px) {
   .header-container {
@@ -292,13 +341,62 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+  }
   .index-container a {
     padding: 4px 20px;
-    border-radius: 10px; }
+    border-radius: 10px;
+  }
   .about {
     width: 100vw;
     height: 80vh;
-    background-color: #fe5f55; } }
+    background-color: #fe5f55;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*# sourceMappingURL=style.css.map */
