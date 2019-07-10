@@ -17,13 +17,10 @@ exports.getLogin = (req, res, next) => res.render("auth/login");
 
 exports.postLogin = passport.authenticate("local", {
   failureRedirect: "/auth/login",
-  successRedirect: "/profile"
+  successRedirect: "/profile/"
 });
 
-exports.getProfile = (req, res, next) =>
-  res.render("profile", { user: req.user });
-
 exports.logout = (req, res, next) => {
-  req.logOut();
-  res.redirect("/login");
+  req.logout();
+  res.redirect("/auth/login");
 };

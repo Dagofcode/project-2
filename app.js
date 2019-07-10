@@ -67,7 +67,9 @@ app.locals.title = "Project Module 2";
 
 const index = require("./routes/index");
 const auth = require("./routes/authRoutes");
+const profile = require("./routes/profileRoutes");
 app.use("/", checkLoggedUser, index);
 app.use("/auth", checkLoggedUser, auth);
+app.use("/profile", checkLoggedUser, profile);
 
 module.exports = app;
