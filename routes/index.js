@@ -13,6 +13,7 @@ router.get("/viewAll", (req, res, next) => {
 router.get("/view-single", (req, res, next) => {
   res.render("view-single");
 });
-router.get("/profile", isLoggedIn, getProfile);
-
+router.get("/profile", (req, res, next) => {
+  res.render("profile");
+});
 module.exports = router;
