@@ -2,11 +2,12 @@ const Post = require("../models/Post");
 const User = require("../models/User");
 
 exports.getProfile = (req, res, next) => {
-  // if (req.user.role === "User") res.render("profile", { user: req.user });
-  // else if (req.user.role === "Company") {
-  //   res.render("profiles/company-profile", { user: req.user });
-  // }
-  res.render("profiles/company-profile", { user: req.user });
+  console.log(req.user.role);
+  if (req.user.role === "User") res.render("profile", { user: req.user });
+  else if (req.user.role === "Company") {
+    res.render("profiles/company-profile", { user: req.user });
+  }
+  //res.render("profiles/company-profile", { user: req.user });
 };
 
 exports.createPost = (req, res, next) => {
