@@ -5,18 +5,19 @@
             <div class="nav-title">AppName</div>
             <div class="nav-items">
                 <a href="/">Home</a>
-                <a href="/auth/login" class="login-ref">Login</a>
+                <a onclick="document.getElementById('id01').style.display='block'" class="login-ref"
+                    style="width:auto;">Login</a>
             </div>
         </div>
         <hr>
         <div class="index-header">
 
             <div class="header-container">
-                <h1>Welcome To <strong id="red-appname">APPNAME</strong></h1>
+                <h1>Welcome To <strong id="red-appname">HACK and MAKE</strong></h1>
                 <p>We want to help you achieve your goals</p>
 
                 <div class="index-btns">
-                    <a href="/viewAll" class="search-ref">Search</a>
+                    <a href="/viewAll" class="search-ref">View Contests</a>
                     <a href="/auth/signup" class="signup-ref">Signup</a>
                 </div>
             </div>
@@ -25,6 +26,37 @@
 
         </div>
     </div>
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/auth/login" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="../images/default.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container-form">
+                <label for="username"><b>Username</b></label>
+                <input type="email" placeholder="Enter Username" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <button type="submit">Login</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="password">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+
 
     <div class="about">
         <div class="about-box">

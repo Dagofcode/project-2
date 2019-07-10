@@ -44,7 +44,7 @@ exports.getSinglePost = (req, res, next) => {
 exports.getAllUserPosts = (req, res, next) => {
   Post.find({ author: req.params.id })
     .then(posts => {
-      res.render("profiles/company-profile", { posts });
+      res.render("profiles/company-profile-posts", { posts });
     })
     .catch(err => {
       console.log(err);

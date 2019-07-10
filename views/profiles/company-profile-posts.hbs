@@ -1,0 +1,46 @@
+<div class="company-profile">
+    <div class="sidenav black">
+        <i class="fa fa-user"></i>
+        <a href="/">Home</a>
+        <a href="/profile/{{user.id}}">View My Posts</a>
+        <a href='/profile/'>Create Post</a>
+        <a href="/viewAll">View Contests</a>
+        <a href="/">View Profile</a>
+        <a href="/auth/logout">Logout</a>
+    </div>
+
+
+    <div class="company-box">
+        <div class="company-title">
+            <h1>COMPANY PROFILE</h1>
+        </div>
+
+
+
+
+        <hr class="company-hr">
+
+        <div class="posts-by-creator">
+            <table id="customers">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date created</th>
+                </tr>
+                {{#each posts }}
+
+                <tr>
+                    <th>{{this.title}}</th>
+                    <th>{{this.description}}</th>
+                    <th>{{this.createdAt}}</th>
+                </tr>
+                {{/each}}
+
+            </table>
+        </div>
+
+
+
+
+    </div>
+</div>

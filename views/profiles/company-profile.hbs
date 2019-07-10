@@ -3,7 +3,7 @@
         <i class="fa fa-user"></i>
         <a href="/">Home</a>
         <a href="/profile/{{user.id}}">View My Posts</a>
-        <a onclick="createPost()">Create Post</a>
+        <a href='/profile/'>Create Post</a>
         <a href="/viewAll">View Contests</a>
         <a href="/">View Profile</a>
         <a href="/auth/logout">Logout</a>
@@ -19,11 +19,6 @@
 
         <hr class="company-hr">
 
-        <div class="posts-by-creator">
-            {{#each posts }}
-            {{this.title}}
-            {{/each}}
-        </div>
         <form action="/profile/" method="POST" id="create-post">
 
 
@@ -35,8 +30,8 @@
             <input type="submit" class="button" value="Create Post" id="post-submit">
 
         </form>
-        <div class="profile-info">
-            <h1> {{s}} </h1>
-        </div>
+
+
+
     </div>
 </div>
