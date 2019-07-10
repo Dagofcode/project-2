@@ -1,12 +1,22 @@
 <div class="sidenav black">
     <a href="/">Home</a>
     <a href="#">Companies</a>
-    <a href="#">Need Help</a>
+    <a href="/viewAll">View Contests</a>
     <a href="/auth/logout">Logout</a>
 </div>
 
 <div class="view-all">
-    <a href="/view-single" class="box"></a>
-    <h1>COMPANY PROFILE</h1>
 
+    <h1>COMPANY PROFILE</h1>
+    <button>Create Post</button>
+
+    <form action="/profile/" method="POST" id="create-post">
+
+        <label for="text">Title</label>
+        <input type="text" name="title">
+        <label for="">Description</label>
+        <input type="text" name="description">
+        <input type="submit" class="button" value="Create Post">
+
+    </form>
 </div>

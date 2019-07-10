@@ -2,10 +2,12 @@
 <div class="sidenav">
     <a href="/">Home</a>
     <a href="#">Companies</a>
-    <a href="#">Need Help</a>
+    <a href="/profile/">Profile</a>
 </div>
 
 <div class="view-all">
-    <a href="/view-single" class="box"></a>
+    {{#each posts}}
+    <a href="/view-single/{{ this._id}}" class="box"> {{this.title}} </a>
+    {{/each}}
 
 </div>
