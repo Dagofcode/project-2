@@ -4,7 +4,7 @@
 
 body {
   font: 14px "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #eef5db; }
+  background-color: white; }
 
 a {
   color: #00b7ff; }
@@ -341,5 +341,55 @@ hr {
 
 .black {
   background-color: #0d0d0d; }
+
+/* COMPANY PROFILE CSS */
+.company-profile .sidenav {
+  width: 15vw;
+  background-color: white;
+  color: #fe5f55;
+  border-right: 1px solid #fe5f55; }
+
+.company-profile .sidenav a {
+  color: #fe5f55;
+  transition: 0.3s; }
+
+.company-hr {
+  border-color: #fe5f55; }
+
+.company-profile .sidenav a:hover {
+  background-color: #fe5f55;
+  color: white; }
+
+.sidenav i {
+  display: flex;
+  justify-content: center;
+  font-size: 10vw;
+  margin-bottom: 10vh; }
+
+.company-title {
+  color: #fe5f55;
+  width: 70vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#create-post {
+  width: 70vw;
+  padding: 0 10vw;
+  margin-top: 20vh;
+  display: none; }
+
+#post-submit {
+  transition: 0.3s;
+  border: 1px solid #fe5f55; }
+
+#post-submit:hover {
+  background-color: white;
+  color: #fe5f55;
+  border: 1px solid #fe5f55; }
+
+.company-box {
+  margin-left: 15vw; }
 
 /*# sourceMappingURL=style.css.map */

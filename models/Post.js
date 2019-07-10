@@ -13,6 +13,10 @@ const postSchema = new Schema(
     photoUrl: {
       type: String,
       required: false
+    },
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
     }
   },
   {

@@ -12,6 +12,7 @@ const userSchema = new Schema(
       enum: ["Company", "User", "Admin"],
       default: "User"
     }
+
     // firstName: {
     //   type: String,
     //   require: true
