@@ -9,7 +9,7 @@ const {
 /* GET home page */
 router.get("/", (req, res, next) => {
   isLoggedIn;
-  res.render("index");
+  res.render("index", { user: req.user });
 });
 router.get("/viewAll", getAllPosts);
 router.get("/view-single/:id", getSinglePost);
