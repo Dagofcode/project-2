@@ -5,18 +5,16 @@ exports.getSignup = (req, res, next) => res.render("auth/signup");
 
 exports.postSignup = (req, res, next) => {
   User.register({ ...req.body }, req.body.password)
-    .then(() => {
-      res.redirect("/auth/login");
+    .then(user => {
+      res.redirect("/");
     })
     .catch(err => {
-      res.render("auth/signup", { err });
+      res.render("index", { err });
     });
 };
 
-exports.getLogin = (req, res, next) => res.render("auth/login");
-
 exports.postLogin = passport.authenticate("local", {
-  failureRedirect: "/auth/login",
+  failureRedirect: "/",
   successRedirect: `/profile/`
 });
 

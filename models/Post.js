@@ -6,6 +6,10 @@ const postSchema = new Schema(
       type: String,
       required: true
     },
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    },
     description: {
       type: String,
       required: true
@@ -14,9 +18,10 @@ const postSchema = new Schema(
       type: String,
       required: false
     },
-    author: {
-      type: Schema.Types.ObjectId,
-      ref: "User"
+
+    date: {
+      type: Date,
+      default: Date.now
     }
   },
   {
