@@ -15,20 +15,21 @@
   <div class="index-container">
 
     <div class="background-img">
-
+      {{#if company }}
+      {{else}}
       <div class="nav-bar">
         <div class="nav-title">Hack and Make</div>
         <div class="nav-items">
           <a href="/">Home</a>
           <a href="/profile/">Profile</a>
-          {{#if user }}
-          {{else}}
+
           <a onclick="document.getElementById('id01').style.display='block'" class="login-ref"
             style="width:auto;">Login</a>
-          {{/if}}
 
         </div>
       </div>
+      {{/if}}
+
       <hr>
 
       {{{body}}}

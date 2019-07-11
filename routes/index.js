@@ -8,8 +8,11 @@ const {
 
 /* GET home page */
 router.get("/", (req, res, next) => {
+  if (req.user.role === "Company") {
+    company = true;
+  }
   isLoggedIn;
-  res.render("index", { user: req.user });
+  res.render("index", { user: req.user, company });
 });
 router.get("/viewAll", getAllPosts);
 router.get("/view-single/:id", getSinglePost);
