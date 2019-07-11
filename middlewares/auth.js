@@ -5,5 +5,10 @@ exports.checkLoggedUser = (req, res, next) => {
   next();
 };
 
-exports.isLoggedIn = (req, res, next) =>
-  req.isAuthenticated() ? next() : res.send("/auth/login");
+exports.isLoggedIn = (req, res, next) => {
+  if (req.isAuthenticated()) {
+    next();
+  } else {
+    res.send("/");
+  }
+};

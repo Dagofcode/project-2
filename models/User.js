@@ -11,16 +11,20 @@ const userSchema = new Schema(
       type: String,
       enum: ["Company", "User", "Admin"],
       default: "User"
-    }
+    },
 
-    // firstName: {
-    //   type: String,
-    //   require: true
-    // },
-    // lastName: {
-    //   type: String,
-    //   required: true
-    // }
+    firstName: {
+      type: String,
+      require: false
+    },
+    lastName: {
+      type: String,
+      required: false
+    },
+    companyName: {
+      type: String,
+      required: false
+    }
   },
   {
     timestamps: true,

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const isLoggedIn = require("../middlewares/auth");
 const {
   getAllPosts,
   getSinglePost
@@ -8,6 +8,7 @@ const {
 
 /* GET home page */
 router.get("/", (req, res, next) => {
+  isLoggedIn;
   res.render("index");
 });
 router.get("/viewAll", getAllPosts);

@@ -23,6 +23,7 @@ exports.createPost = (req, res, next) => {
 
 exports.getAllPosts = (req, res, next) => {
   Post.find()
+    .populate("author")
     .then(posts => {
       res.render("viewAll", { posts });
     })
