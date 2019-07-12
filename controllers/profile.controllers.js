@@ -14,7 +14,7 @@ exports.createPost = (req, res, next) => {
       res.render("profiles/company-profile", { user: req.user });
     })
     .catch(err => {
-      console.log(err);
+      res.render("profiles/company-profile", err);
     });
 };
 
@@ -34,7 +34,7 @@ exports.getSinglePost = (req, res, next) => {
       res.render("view-single", { post, user: req.user });
     })
     .catch(err => {
-      console.log(err);
+      res.render("view-single", err);
     });
 };
 
@@ -44,6 +44,6 @@ exports.getAllUserPosts = (req, res, next) => {
       res.render("profiles/company-profile-posts", { posts, user: req.user });
     })
     .catch(err => {
-      console.log(err);
+      res.render("profiles/company-profile-posts", { err, user: req.user });
     });
 };

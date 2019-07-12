@@ -329,8 +329,7 @@ i {
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 0%; }
+  top: 50%; }
 
 .single-container {
   width: 100vw; }
