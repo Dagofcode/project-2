@@ -553,14 +553,30 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(1) invert(0);
 }
-.company-title {
-  color: #fe5f55;
+
+.company-contents {
   width: 100vw;
-  height: 20vh;
+  height: 100vh;
+  z-index: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.posts-table {
+  background-color: white;
+  color: black;
+}
+.company-empty {
+  width: 100vw;
+  height: 30vh;
+  background-image: url("../images//bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #create-post {
   width: 70vw;
@@ -600,7 +616,7 @@ hr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  color: white;
+  color: black;
 }
 
 .hastaarriba {
