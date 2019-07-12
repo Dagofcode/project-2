@@ -1,53 +1,27 @@
-<!-- Side navigation -->
-<div class="sidenav">
-    <a href="/">Home</a>
-    <a href="#">Companies</a>
-    <a href="/profile/">Profile</a>
-</div>
+<div class="view-all-container">
 
-<div class="view-all">
-
-
-    {{#each posts}}
-    <div class="post-box shadow">
-
-        <a href="/view-single/{{ this._id}}"> <img src="../images/default.png" alt=""></a>
-
-        <div class="post-info">
-            <a href="">
-                <h1>LOCAL HACK DAY HOSTED BY ME</h1>
-            </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium itaque ad unde. Ex eum
-                corporis velit libero soluta hic rem, architecto, a exercitationem, ipsa officia aspernatur beatae cum.
-                Cum.</p>
-        </div>
+    <div class="test-box">
+        <h1>Upcoming HACK&MAKE EVENTS IN Mexico City</h1>
     </div>
-    <div class="post-box shadow">
+    <div class="view-all ">
 
-        <a href="/view-single/{{ this._id}}"> <img src="../images/default.png" alt=""></a>
+        {{#each posts}}
+        <div class="post-box shadow">
 
-        <div class="post-info">
-            <a href="">
-                <h1>LOCAL HACK DAY HOSTED BY ME</h1>
-            </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium itaque ad unde. Ex eum
-                corporis velit libero soluta hic rem, architecto, a exercitationem, ipsa officia aspernatur beatae cum.
-                Cum.</p>
+            <a href="/view-single/{{this._id}}"> <img src="{{this.photoUrl}}" alt=""></a>
+
+            <div class="post-info">
+                <a href="/view-single/">
+                    <h1>{{this.title}}</h1>
+                </a>
+
+                <h1>By: {{this.author.email}} </h1>
+
+            </div>
         </div>
-    </div>
-    <div class="post-box shadow">
 
-        <a href="/view-single/{{ this._id}}"> <img src="../images/default.png" alt=""></a>
+        {{/each}}
 
-        <div class="post-info">
-            <a href="">
-                <h1>LOCAL HACK DAY HOSTED BY ME</h1>
-            </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium itaque ad unde. Ex eum
-                corporis velit libero soluta hic rem, architecto, a exercitationem, ipsa officia aspernatur beatae cum.
-                Cum.</p>
-        </div>
     </div>
-    {{/each}}
 
 </div>

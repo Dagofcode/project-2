@@ -2,10 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Bree Serif", serif; }
 
 body {
-  font: 24.5 "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: white; }
 
 a {
@@ -13,7 +12,6 @@ a {
 
 .index-container {
   width: 100vw;
-  height: 100vh;
   background-image: url("../images/bnwBackground.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -24,21 +22,30 @@ a {
   background: #525161;
   opacity: 0.9;
   overflow: hidden;
-  height: 100%;
-  z-index: 2; }
+  z-index: 1; }
 
 .index-container a {
   border-radius: 10px;
   text-decoration: none; }
 
 .nav-bar {
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
-  color: white;
+  color: #525161;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem; }
+  font-size: 1.8rem;
+  -webkit-box-shadow: 5px 5px 5px black;
+  -moz-box-shadow: 5px 5px 5pxrgb 0, 0, 0;
+  box-shadow: 5px 5px 5px black;
+  z-index: 999;
+  background-color: white;
+  opacity: 0.9;
+  font-size: 25px; }
+
+.nav-bar a {
+  color: #525161; }
 
 .nav-title {
   margin-left: 50px; }
@@ -49,14 +56,25 @@ a {
 .nav-items a {
   text-decoration: none;
   margin: 0 5px;
+  color: #525161; }
+
+.publish {
+  background-color: #fe5f55;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.4s; }
+
+.publish:hover {
   color: white; }
 
 .login-ref {
   border: 1px solid #eef5db;
   color: white;
-  transition: 0.7s;
+  transition: 0.4s;
   font-size: 1.5rem;
-  padding: 5px 30px; }
+  padding: 5px 30px;
+  border-radius: 10px; }
 
 .login-ref:hover {
   background-color: white;
@@ -141,16 +159,28 @@ form {
   display: block;
   margin-top: 0em; }
 
-input[type="text"],
-input[type="password"] {
+input[name="description"] {
   background-color: #f6f6f6;
   color: #0d0d0d;
   padding: 15px 32px;
-  text-align: center;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px;
+  width: 100%;
+  height: 30vh;
+  border: 2px solid #f6f6f6;
+  border-radius: 5px 5px 5px 5px; }
+
+input[type="password"],
+input[type="uname"],
+input[type="lname"] {
+  background-color: #f6f6f6;
+  color: #0d0d0d;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 5px;
   width: 70%;
   border: 2px solid #f6f6f6;
   border-radius: 5px 5px 5px 5px; }
@@ -172,8 +202,7 @@ input[type="submit"] {
   padding-bottom: 100px;
   padding-top: 130px;
   background: linear-gradient(to top right, #4f6367 0%, #b8d8d8 100%);
-  min-height: 100vh;
-  font-family: "Poppins", "Arial", "Helvetica Neue", "sans-serif"; }
+  min-height: 100vh; }
 
 div {
   display: block; }
@@ -212,6 +241,12 @@ div {
   justify-content: space-evenly;
   color: white; }
 
+footer {
+  width: 100vw;
+  height: 20vh;
+  color: white;
+  background-color: #525161; }
+
 .contact-form input {
   width: 30vw;
   height: 10px;
@@ -245,7 +280,10 @@ div {
   padding: 15px 60px;
   border-radius: 30px; }
 
-input:focus {
+input,
+textarea,
+select,
+a {
   outline: none; }
 
 i {
@@ -257,16 +295,91 @@ i {
   flex-wrap: wrap;
   justify-content: start; }
 
+.test-box {
+  background-image: url("../images/bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.test-box h1 {
+  background-color: #fe5f55; }
+
+.view-all-container {
+  width: 100vw;
+  background-image: url("../images/graynBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .view-all {
-  margin-left: 11vw;
   padding: 0px 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  height: 80vh; }
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0%; }
+
+.single-container {
+  width: 100vw; }
+
+.view-single {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center; }
+
+.view-single img {
+  width: 70%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 200%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.single-info {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white; }
+
+.single-info p {
+  width: 50vw; }
+
+.single-info-box {
+  background-color: lightgray;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8); }
+
+.gray-background {
+  overflow: hidden; }
 
 .post-box {
-  border: 1px solid black;
+  background-color: white;
   height: 30vh;
   width: 70vw;
   display: flex;
@@ -275,7 +388,8 @@ i {
   margin: 20px; }
 
 .post-box img {
-  width: 100%;
+  background-color: red;
+  width: 30vw;
   height: 100%; }
 
 .post-info {
@@ -284,7 +398,8 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px 30px; }
+  margin: 0px 30px;
+  opacity: none; }
 
 .post-innerbox {
   border: 1px solid red;
@@ -384,36 +499,37 @@ hr {
   background-color: #0d0d0d; }
 
 /* COMPANY PROFILE CSS */
-.company-profile .sidenav {
-  width: 15vw;
-  background-color: white;
-  color: #fe5f55;
-  border-right: 1px solid #fe5f55; }
+.company-profile {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images//bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(1) invert(0); }
 
-.company-profile .sidenav a {
-  color: #fe5f55;
-  transition: 0.3s; }
-
-.company-hr {
-  border-color: #fe5f55; }
-
-.company-profile .sidenav a:hover {
-  background-color: #fe5f55;
-  color: white; }
-
-.sidenav i {
+.company-contents {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
   display: flex;
-  justify-content: center;
-  font-size: 10vw;
-  margin-bottom: 10vh; }
-
-.company-title {
-  color: #fe5f55;
-  width: 70vw;
-  height: 20vh;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.posts-table {
+  background-color: white;
+  color: black; }
+
+.company-empty {
+  width: 100vw;
+  height: 30vh;
+  background-image: url("../images//bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #create-post {
   width: 70vw;
@@ -429,11 +545,7 @@ hr {
   color: #fe5f55;
   border: 1px solid #fe5f55; }
 
-.company-box {
-  margin-left: 15vw; }
-
 #customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%; }
 
@@ -452,8 +564,7 @@ hr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #fe5f55;
-  color: white; }
+  color: black; }
 
 .hastaarriba {
   width: 100vw;
@@ -568,33 +679,23 @@ span.password {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100vw;
-  /* Full width */
   height: 100vh;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
   padding-top: 60px; }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 40vw;
-  /* Could be more or less, depending on screen size */ }
+  width: 40vw; }
 
 /* The Close Button (x) */
 .close {
@@ -647,5 +748,19 @@ span.password {
 
 .image1 {
   background-image: url("http://farm6.staticflickr.com/5323/9902848784_cbd10ba3ca_c.jpg"); }
+
+#id03 .container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+#id03 input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

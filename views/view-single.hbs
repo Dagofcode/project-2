@@ -1,7 +1,67 @@
 <div class="single-container">
+<<<<<<< HEAD
     <img src="" alt="">
     <h1></h1>
     <p> {{this.description}} </p>
     <p>Date added</p>
     <button>Signup for contest</button>
+=======
+    <div class="view-single shadow">
+        <img src="{{this.photoUrl}}" alt="">
+
+    </div>
+
+
+    <div class="single-info">
+        <div class="single-info-box">
+            <h1>Upcoming HACK&MAKE EVENTS IN Mexico City</h1>
+            <p> {{this.description}} </p>
+            <p>Date added: {{this.createdAt}} </p>
+            <a onclick="document.getElementById('id03').style.display='block'" class="publish"
+                style="text-decoration: none;">SignUp for contest</a>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="id03" class="modal">
+
+        <form class="modal-content animate" action="/auth/login" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container-form">
+                <label for="Firstname"><b>Firstname</b></label>
+                <input type="uname" placeholder="Enter firstname" name="uname">
+                <label for="Lastname"><b>Lastname</b></label>
+                <input type="lname" placeholder="Enter lastname" name="uname">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter email" name="email">
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <hr>
+
+                <label for="number"><b>Phone number</b></label>
+                <input type="phone">
+
+
+
+                <label for="password"><b>Name of your project</b></label>
+                <input type="password" placeholder="Enter name of Project" name="password">
+
+                <button type="submit">Register For Contest</button>
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+>>>>>>> fdee31db0c98745e41a2b86004f704333f5d3f8f
 </div>

@@ -25,3 +25,7 @@ window.onclick = function(event) {
     modalSignup.style.display = "none";
   }
 };
+
+function removeAuthButtons() {
+  document.querySelector(".login-ref").styles.display = "hidden";
+}
