@@ -7,7 +7,6 @@ exports.getProfile = (req, res, next) => {
   else if (req.user.role === "Company") {
     res.render("profiles/company-profile", { user: req.user });
   }
-  //res.render("profiles/company-profile", { user: req.user });
 };
 
 exports.createPost = (req, res, next) => {

@@ -11,16 +11,8 @@ const userSchema = new Schema(
       type: String,
       enum: ["Company", "User", "Admin"],
       default: "User"
-    }
-
-    // firstName: {
-    //   type: String,
-    //   require: true
-    // },
-    // lastName: {
-    //   type: String,
-    //   required: true
-    // }
+    },
+    concursos: [{ type: Schema.Types.ObjectId, ref: "Post" }]
   },
   {
     timestamps: true,
