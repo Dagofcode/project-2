@@ -342,7 +342,7 @@ i {
   justify-content: center;
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 5vw;
 }
 .single-container {
   width: 100vw;
@@ -811,15 +811,15 @@ span.password {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-// .consursossuscritos {
-//   padding: 12px 20px;
-//   margin: 8px 0;
-//   display: inline-block;
-//   border: 1px solid #ccc;
-//   box-sizing: border-box;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   align-items: flex-start;
-//   background: white;
-// }
+.consursossuscritos {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: white;
+}
