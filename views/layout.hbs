@@ -18,10 +18,23 @@
   <div class="nav-bar">
     <div class="nav-title"> <a href="/" style="text-decoration: none">HACK & MAKE</a> </div>
     <div class="nav-items">
+      {{#if user}}
+      <a href="/profile/{{user.id}}">View My Posts</a>
+      <a href='/profile/'>Create Post</a>
+      <a href="/viewAll">View Contests</a>
+      <a href="/auth/logout">Logout</a>
+      <i class="fa fa-user"></i>
+
+
+      {{else}}
       <a href="/" class="publish">Publish a Hackaton</a>
       <a onclick="document.getElementById('id01').style.display='block'" class="login-ref" style="width:auto;">Login</a>
+      {{/if}}
     </div>
   </div>
+
+
+
 
   {{{body}}}
 

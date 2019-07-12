@@ -11,7 +11,7 @@ exports.getProfile = (req, res, next) => {
 exports.createPost = (req, res, next) => {
   Post.create({ ...req.body, author: req.user.id })
     .then(post => {
-      res.render("profiles/company-profile");
+      res.render("profiles/company-profile", { user: req.user });
     })
     .catch(err => {
       console.log(err);
@@ -22,7 +22,7 @@ exports.getAllPosts = (req, res, next) => {
   Post.find()
     .populate("author")
     .then(posts => {
-      res.render("viewAll", { posts });
+      res.render("viewAll", { posts, user: req.user });
     })
     .catch(err => {
       res.render("viewAll", err);
@@ -31,7 +31,7 @@ exports.getAllPosts = (req, res, next) => {
 exports.getSinglePost = (req, res, next) => {
   Post.findById(req.params.id)
     .then(post => {
-      res.render("view-single", post);
+      res.render("view-single", post, { user: req.user });
     })
     .catch(err => {
       console.log(err);
@@ -41,7 +41,7 @@ exports.getSinglePost = (req, res, next) => {
 exports.getAllUserPosts = (req, res, next) => {
   Post.find({ author: req.params.id })
     .then(posts => {
-      res.render("profiles/company-profile-posts", { posts });
+      res.render("profiles/company-profile-posts", { posts, user: req.user });
     })
     .catch(err => {
       console.log(err);
