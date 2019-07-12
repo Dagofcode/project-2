@@ -11,13 +11,21 @@
 <p>Para la demo existen dos cuentas precreadas una de administrador y una de usuario.<br>
 La cuenta de administrador es:</p>
 <ul>
-<li>correo: <a href="mailto:admin@admin.com">admin@admin.com</a></li>
-<li>contraseña: 123</li>
-</ul>
-<p>La cuenta de usuario es:</p>
-<ul>
-<li>correo: <a href="mailto:usuario@susario.com">usuario@susario.com</a></li>
-<li>contraseña: 123</li>
+<li>
+<p>correo: <a href="mailto:admin@admin.com">admin@admin.com</a></p>
+</li>
+<li>
+<p>contraseña: 123<br>
+El administrador puede crear nuevas publicaciones, ver sus publicaciones hechas y ver las diferentes publicaciones hechas por otras compañias<br>
+La cuenta de usuario es:</p>
+</li>
+<li>
+<p>correo: <a href="mailto:usuario@susario.com">usuario@susario.com</a></p>
+</li>
+<li>
+<p>contraseña: 123<br>
+El usuario puede suscribirse a los concursos, y ver los concursos a los que se ha suscrito</p>
+</li>
 </ul>
 <h1 id="creditos">Creditos</h1>
 <ul>
