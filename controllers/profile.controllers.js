@@ -31,7 +31,7 @@ exports.getAllPosts = (req, res, next) => {
 exports.getSinglePost = (req, res, next) => {
   Post.findById(req.params.id)
     .then(post => {
-      res.render("view-single", post, { user: req.user });
+      res.render("view-single", { post, user: req.user });
     })
     .catch(err => {
       console.log(err);
