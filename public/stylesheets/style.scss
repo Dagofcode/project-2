@@ -2,11 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bree Serif", serif;
 }
 body {
-  font: 24.5 "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-color: white;
 }
 
@@ -33,17 +31,23 @@ a {
   text-decoration: none;
 }
 .nav-bar {
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
-  color: white;
+  color: #525161;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  -webkit-box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  -moz-box-shadow: 5px 5px 5pxrgb (0, 0, 0);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  z-index: 999;
+  background-color: white;
   opacity: 0.9;
+  font-size: 25px;
 }
-.grey {
-  background-color: #525161;
+.nav-bar a {
+  color: #525161;
 }
 .nav-title {
   margin-left: 50px;
@@ -54,14 +58,25 @@ a {
 .nav-items a {
   text-decoration: none;
   margin: 0 5px;
+  color: #525161;
+}
+.publish {
+  background-color: #fe5f55;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.4s;
+}
+.publish:hover {
   color: white;
 }
 .login-ref {
   border: 1px solid #eef5db;
   color: white;
-  transition: 0.7s;
+  transition: 0.4s;
   font-size: 1.5rem;
   padding: 5px 30px;
+  border-radius: 10px;
 }
 .login-ref:hover {
   background-color: white;
@@ -190,7 +205,6 @@ input[type="submit"] {
   padding-top: 130px;
   background: linear-gradient(to top right, #4f6367 0%, #b8d8d8 100%);
   min-height: 100vh;
-  font-family: "Poppins", "Arial", "Helvetica Neue", "sans-serif";
 }
 div {
   display: block;
@@ -286,6 +300,20 @@ i {
   flex-wrap: wrap;
   justify-content: start;
 }
+.test-box {
+  background-image: url("../images/bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  width: 100vw;
+  height: 60vh;
+  background-color: #4f6367;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
 .view-all-container {
   width: 100vw;
   background-image: url("../images/graynBackground.jpg");
@@ -299,7 +327,11 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0%;
 }
+
 .gray-background {
   overflow: hidden;
 }
@@ -491,7 +523,6 @@ hr {
   margin-left: 15vw;
 }
 #customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
