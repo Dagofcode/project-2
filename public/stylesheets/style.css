@@ -499,9 +499,18 @@ hr {
   background-color: #0d0d0d; }
 
 /* COMPANY PROFILE CSS */
+.company-profile {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images//bnwBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .company-title {
   color: #fe5f55;
-  width: 70vw;
+  width: 100vw;
   height: 20vh;
   display: flex;
   justify-content: center;
@@ -540,7 +549,6 @@ hr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #fe5f55;
   color: white; }
 
 .hastaarriba {

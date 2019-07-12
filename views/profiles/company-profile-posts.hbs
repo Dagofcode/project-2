@@ -1,37 +1,36 @@
 <div class="company-profile">
 
 
-    <div class="company-box">
-        <div class="company-title">
-            <h1>COMPANY PROFILE</h1>
-        </div>
 
-
-
-
-        <hr class="company-hr">
-
-        <div class="posts-by-creator">
-            <table id="customers">
-                <tr>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Date created</th>
-                </tr>
-                {{#each posts }}
-
-                <tr>
-                    <th>{{this.title}}</th>
-                    <th>{{this.description}}</th>
-                    <th>{{this.createdAt}}</th>
-                </tr>
-                {{/each}}
-
-            </table>
-        </div>
-
-
-
-
+    <div class="company-title">
+        <h1>COMPANY PROFILE</h1>
     </div>
+
+
+
+
+    <hr class="company-hr">
+
+    <div class="posts-by-creator">
+        <table id="customers">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date created</th>
+            </tr>
+            {{#each posts }}
+
+            <tr>
+                <th>{{this.title}}</th>
+                <th>{{this.description}}</th>
+                <th>{{this.createdAt}}</th>
+            </tr>
+            {{/each}}
+
+        </table>
+    </div>
+
+
+
+
 </div>
