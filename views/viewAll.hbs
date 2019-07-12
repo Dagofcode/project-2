@@ -8,14 +8,14 @@
         {{#each posts}}
         <div class="post-box shadow">
 
-            <a href="/view-single/{{this._id}}"> <img src="{{this.photoUrl}}" alt=""></a>
+            <a href="/view-single/{{this._id}}"> <img
+                    src=" {{#if this.photoUrl}}{{this.photoUrl}}{{else}}../images/default.png {{/if}}" alt=""></a>
 
             <div class="post-info">
                 <a href="/view-single/">
                     <h1>{{this.title}}</h1>
                 </a>
 
-                <h1>By: {{this.author.email}} </h1>
 
             </div>
         </div>

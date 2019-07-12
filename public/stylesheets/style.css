@@ -284,7 +284,8 @@ input,
 textarea,
 select,
 a {
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 i {
   color: #fe5f55; }
@@ -379,13 +380,17 @@ i {
   overflow: hidden; }
 
 .post-box {
-  background-color: white;
+  background-color: #525161;
   height: 30vh;
   width: 70vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 20px; }
+
+.post-box a {
+  color: white;
+  text-shadow: 1px 1px 2px #fe5f55; }
 
 .post-box img {
   background-color: red;
@@ -509,6 +514,13 @@ hr {
   background-size: cover;
   filter: brightness(1) invert(0); }
 
+.company-title {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .company-contents {
   width: 100vw;
   height: 100vh;
@@ -518,18 +530,28 @@ hr {
   justify-content: center;
   align-items: center; }
 
+.company-contents h1 {
+  text-shadow: 1px 1px 2px #fe5f55; }
+
 .posts-table {
   background-color: white;
-  color: black; }
+  width: 100vw; }
 
-.company-empty {
+.company-box {
   width: 100vw;
-  height: 30vh;
-  background-image: url("../images//bnwBackground.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  height: 100%;
+  background-color: #525161;
+  color: white;
+  opacity: 0.9;
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8); }
+
+.company-box-form {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
 
 #create-post {
   width: 70vw;
