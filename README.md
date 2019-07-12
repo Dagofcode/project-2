@@ -20,7 +20,7 @@ El administrador puede crear nuevas publicaciones, ver sus publicaciones hechas 
 La cuenta de usuario es:</p>
 </li>
 <li>
-<p>correo: <a href="mailto:usuario@susario.com">usuario@susario.com</a></p>
+<p>correo: <a href="mailto:usuario@ususario.com">usuario@ususario.com</a></p>
 </li>
 <li>
 <p>contraseña: 123<br>
