@@ -12,9 +12,6 @@ const userSchema = new Schema(
       enum: ["Company", "User", "Admin"],
       default: "User"
     },
-<<<<<<< HEAD
-    concursos: [{ type: Schema.Types.ObjectId, ref: "Post" }]
-=======
 
     firstName: {
       type: String,
@@ -28,7 +25,6 @@ const userSchema = new Schema(
       type: String,
       required: false
     }
->>>>>>> fdee31db0c98745e41a2b86004f704333f5d3f8f
   },
   {
     timestamps: true,

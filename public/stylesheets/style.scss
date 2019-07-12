@@ -618,24 +618,6 @@ hr {
   text-align: left;
   color: black;
 }
-
-.hastaarriba {
-  width: 100vw;
-  height: 10vh;
-  background: #4f6367;
-  color: white;
-  padding: 30px;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.itemhastaarriba a {
-  text-decoration: none;
-  border-radius: 10px;
-  margin: 5px;
-  color: white;
-}
 .soylaotramitad {
   display: flex;
 }
@@ -648,23 +630,6 @@ hr {
   background: #7a9e9f;
   width: 90vw;
   height: 100vh;
-}
-.titulo {
-  margin-left: 50px;
-}
-.logout {
-  text-decoration: none;
-  margin: 0 5px;
-  color: white;
-  border: 1px solid #eef5db;
-  color: white;
-  transition: 0.7s;
-  font-size: 0.8rem;
-  padding: 5px 30px;
-}
-.logout:hover {
-  background-color: white;
-  color: #fe5f55;
 }
 .menulist {
   text-decoration: none;
@@ -838,3 +803,15 @@ span.password {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+// .consursossuscritos {
+//   padding: 12px 20px;
+//   margin: 8px 0;
+//   display: inline-block;
+//   border: 1px solid #ccc;
+//   box-sizing: border-box;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-evenly;
+//   align-items: flex-start;
+//   background: white;
+// }
